@@ -1,0 +1,15 @@
+/home/amaze/Music/udemy/TodoList/bin/Debug/net6.0/TodoList
+/home/amaze/Music/udemy/TodoList/bin/Debug/net6.0/TodoList.deps.json
+/home/amaze/Music/udemy/TodoList/bin/Debug/net6.0/TodoList.runtimeconfig.json
+/home/amaze/Music/udemy/TodoList/bin/Debug/net6.0/TodoList.dll
+/home/amaze/Music/udemy/TodoList/bin/Debug/net6.0/ref/TodoList.dll
+/home/amaze/Music/udemy/TodoList/bin/Debug/net6.0/TodoList.pdb
+/home/amaze/Music/udemy/TodoList/obj/Debug/net6.0/TodoList.csproj.AssemblyReference.cache
+/home/amaze/Music/udemy/TodoList/obj/Debug/net6.0/TodoList.GeneratedMSBuildEditorConfig.editorconfig
+/home/amaze/Music/udemy/TodoList/obj/Debug/net6.0/TodoList.AssemblyInfoInputs.cache
+/home/amaze/Music/udemy/TodoList/obj/Debug/net6.0/TodoList.AssemblyInfo.cs
+/home/amaze/Music/udemy/TodoList/obj/Debug/net6.0/TodoList.csproj.CoreCompileInputs.cache
+/home/amaze/Music/udemy/TodoList/obj/Debug/net6.0/TodoList.dll
+/home/amaze/Music/udemy/TodoList/obj/Debug/net6.0/ref/TodoList.dll
+/home/amaze/Music/udemy/TodoList/obj/Debug/net6.0/TodoList.pdb
+/home/amaze/Music/udemy/TodoList/obj/Debug/net6.0/TodoList.genruntimeconfig.cache
