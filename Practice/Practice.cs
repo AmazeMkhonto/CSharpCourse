@@ -57,6 +57,19 @@ Assume the number parameter is non-negative.*/
 
 //TODO : find a max value from a 1d array
 
+
+// int[] array = {7,1,2,3, 20 ,4,5,-2, 0};
+
+// int maxNum = 0;
+
+// for(int i = 0; i < array.Length; i++){
+//     if(array[i] > maxNum){
+//         maxNum = array[i];
+//     }
+// }
+// System.Console.WriteLine(maxNum);
+
+
 // multi-dimensional arrays declare a 2d array 3 by 3
 
 int[,] grid = new int[3,3]; // this is when you dont know the values
@@ -64,9 +77,76 @@ int[,] grid = new int[3,3]; // this is when you dont know the values
 int[,] grid2 = {{1, 2, 3}, {1, 5, 5}, {4, 5, 1}}; // declaring and initializing a 2d array og size 3 by 3
 
 // given a 3 by 2 array find the maximum value 
+// if the array is empty return -1
 
-int[,] numbers = {{3,5}, {-1,12}, {4,0}};
+// int[,] numbers = {{3,5}, {-1,12}, {4,0}};
+// int[,] numbers = {};
 
-int height = numbers.GetLength(0);
-int width = numbers.GetLength(1);
+// int height = numbers.GetLength(0);
+// int width = numbers.GetLength(1);
 
+// int maxNumber = 0;
+
+// System.Console.WriteLine(height);
+// System.Console.WriteLine(width);
+// if(height == 0 && width == 0){
+//     maxNumber = -1;
+// } else {
+// for(int i = 0; i < height; i++){
+//     for(int j = 0; j < width; j++){
+//         if(numbers[i,j] > maxNumber){
+//             maxNumber = numbers[i,j];
+//         }
+//     }
+// }
+// }
+
+// System.Console.WriteLine(maxNumber);
+
+
+
+// lists
+
+//declare 
+List<string> names1 = new List<string>();
+
+// declare and initialise
+List<string> names = new List<string>(){"amaze", "mkhonto"};
+
+names.AddRange(new List<string>(){"fuck", "this", "shit"}); // pass in a list
+names.AddRange(new string[] {"amy", "Jimmy"}); // pass in an array
+
+//names.Clear(); // now the list should be empty
+
+//names.Contains("fuck");
+
+System.Console.WriteLine("Is the word fuck in the List?: "+names.Contains("fuck")); // this should print out true or false
+
+System.Console.WriteLine("In what index is the word fuck?: "+names.IndexOf("fuck")); // returns the index in which the word is in
+foreach(string name in names){
+    System.Console.WriteLine(name);
+}
+
+
+
+System.Console.WriteLine("The length of the List is: "+names.Count);
+
+
+// in this list only return the values with uppercase, if there are duplicates like 
+//this one  {"one", "TWO", "THREE", "four", "TWO"} dont give me the duplicated value
+// This {"one", "TWO123", "THREE!&^", "four"} should return an empty list
+// we are returning lists
+
+List<string> theNumbers = new List<string>() {"one", "TWO123", "THREE!&^", "four"};
+
+List<string> emptyList = new List<string>();
+
+foreach(string num in theNumbers){
+   if(num == num.ToUpper()){
+    emptyList.Add(num);
+   }
+}
+
+foreach(string empty in emptyList){
+    System.Console.WriteLine(empty);
+}
