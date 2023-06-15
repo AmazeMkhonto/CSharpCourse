@@ -120,16 +120,16 @@ names.AddRange(new string[] {"amy", "Jimmy"}); // pass in an array
 
 //names.Contains("fuck");
 
-System.Console.WriteLine("Is the word fuck in the List?: "+names.Contains("fuck")); // this should print out true or false
+// System.Console.WriteLine("Is the word fuck in the List?: "+names.Contains("fuck")); // this should print out true or false
 
-System.Console.WriteLine("In what index is the word fuck?: "+names.IndexOf("fuck")); // returns the index in which the word is in
-foreach(string name in names){
-    System.Console.WriteLine(name);
-}
+// System.Console.WriteLine("In what index is the word fuck?: "+names.IndexOf("fuck")); // returns the index in which the word is in
+// foreach(string name in names){
+//     System.Console.WriteLine(name);
+// }
 
 
 
-System.Console.WriteLine("The length of the List is: "+names.Count);
+// System.Console.WriteLine("The length of the List is: "+names.Count);
 
 
 // in this list only return the values with uppercase, if there are duplicates like 
@@ -137,16 +137,90 @@ System.Console.WriteLine("The length of the List is: "+names.Count);
 // This {"one", "TWO123", "THREE!&^", "four"} should return an empty list
 // we are returning lists
 
-List<string> theNumbers = new List<string>() {"one", "TWO123", "THREE!&^", "four"};
+// List<string> theNumbers = new List<string>() {"one", "TWO", "THREE", "four", "TWO"};
 
-List<string> emptyList = new List<string>();
+// List<string> emptyList = new List<string>();
 
-foreach(string num in theNumbers){
-   if(num == num.ToUpper()){
-    emptyList.Add(num);
-   }
-}
+// foreach(string num in theNumbers){
+//     bool isUpperCase = true;
+//     bool isLetter = true;
+//     foreach (char character in num){
+//         isUpperCase =  char.IsUpper(character);
+//         isLetter = char.IsLetter(character);
+//     }
+//     if(isUpperCase && isLetter && !(emptyList.Contains(num))){
+//         emptyList.Add(num);
+//     }
+// }
 
-foreach(string empty in emptyList){
-    System.Console.WriteLine(empty);
-}
+// foreach(string words in emptyList){
+//     System.Console.WriteLine(words);
+// }
+
+
+
+
+// // lets say you are given an array of numbers, you aregoing to take it in as a parameter 
+// int[] numbers2 = {1, -1,2,-2,3,-3};
+// int countNegative;
+
+// List<int> GetPositiveNumbers(int[] numbers, out int countNegative) {
+//     List<int> emptyList = new List<int>();
+//     countNegative = 0;
+//     foreach(int number in numbers ){
+//         if(number > 0){
+//             emptyList.Add(number);
+//         } else {
+//             countNegative ++;
+//         }
+//     }
+//     return emptyList;
+// }
+
+// List<int> x = GetPositiveNumbers(numbers2, out countNegative); // because the function returns a list it means the variable that you assign to this is going to be a list as well
+// foreach(int num in x){
+//     System.Console.WriteLine(num);
+// }
+// System.Console.WriteLine("This is the number of negative numbers: "+countNegative);
+
+
+
+
+
+
+
+
+
+
+// //tryparse situation
+// System.Console.WriteLine("Enter any number");
+// string userInput = Console.ReadLine();
+// //int number = int.Parse(userInput); // if the user enters a non digit we are going to get a runtime error, so we are going to use tryParse so that we avoid that situation
+
+// bool isParsingSuccessful = int.TryParse(userInput, out int number);
+
+
+// if(isParsingSuccessful){
+//     System.Console.WriteLine("parsing has worked "+ number);
+// } else {
+//     System.Console.WriteLine("parsing did now work "+ number);
+// }
+
+// Ask the user to enter a number until they give a valid input
+
+
+bool isParsingSuccessful;
+
+do{
+
+    System.Console.WriteLine("Please enter a number");
+    string userInput = Console.ReadLine();
+    
+    isParsingSuccessful = int.TryParse(userInput, out int number);
+
+    if(isParsingSuccessful){
+        System.Console.WriteLine("Congratufuckinglations i guess "+number);
+    } else {
+        System.Console.WriteLine("bro enter a valid number before i kick you in the teeth "+number);
+    }
+}while(!isParsingSuccessful);

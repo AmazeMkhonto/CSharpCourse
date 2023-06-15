@@ -1,52 +1,103 @@
-﻿//todo: write the todo to a point where you are asking the user for input and displaying
-//to them what they have chosen, make use of 1.print, 2.get input, 3.conditionals and 4.methods
+﻿Console.WriteLine("Hello");
 
-Console.WriteLine("Hello");
+string userInput;
+List<string> TODOs = new List<string>();
+
+do{
 Console.WriteLine("What do you want to do?");
 Console.WriteLine("[S]ee all TODOs");
 Console.WriteLine("[A]dd a TODO");
 Console.WriteLine("[R]emove a TODO");
 Console.WriteLine("[E]xit");
 
-string userChoice = Console.ReadLine();
+userInput = Console.ReadLine();
 
-// if(userChoice.ToUpper() == "S"){
-//     userSelection("See all TODOS");
-// } else if (userChoice.ToUpper() == "A"){
-//     userSelection("Add all TODOs");
-// } else if (userChoice.ToUpper() == "R"){
-//     userSelection("Remove a TODO");
-// } else if(userChoice.ToUpper() == "E"){
-//     userSelection("Exit");
-// } else{
-//     System.Console.WriteLine("You did not select a valid option");
-// }
-
-switch(userChoice.ToUpper()){
+switch(userInput.ToUpper()){
     case "S":
-        userSelection("See all TODOS");
+        seeTodos();
         break;
 
     case "A":
-        userSelection("Add all TODOs");
+        addTodos();
         break;
 
     case "R":
-        userSelection("Remove a TODO");
+        removeTodos();
         break;
 
     case "E":
-        userSelection("Exit");
+        System.Console.WriteLine("Exit");
         break;
 
     default:
-        Console.WriteLine("You did not select a valid option");
+        Console.WriteLine("Incorrect input");
         break;
     }
 
+} while(userInput.ToUpper() != "E");
 
-void userSelection (string userCHoice){
-    System.Console.WriteLine("You have chosen to: "+userCHoice);
+
+
+void seeTodos(){
+    if(TODOs.Count > 0){
+            for(int i = 0; i < TODOs.Count; i++){
+                System.Console.WriteLine((i+1)+". "+TODOs[i]);
+            } 
+        } else {
+            System.Console.WriteLine("No TODOs have been added yet.");
+        }
 }
+
+
+void addTodos(){
+    string description;
+
+    do{
+        System.Console.WriteLine("Enter the TODO description:");
+        description = Console.ReadLine(); 
+        if((TODOs.Contains(description)) ){
+            System.Console.WriteLine("The description must be unique");
+
+        } else if((description.Length == 0)){
+            System.Console.WriteLine("The description cannot be empty");
+        } else {
+            TODOs.Add(description);
+            System.Console.WriteLine("TODO successfully added: "+description);
+        }
+    } while(!(TODOs.Contains(description)) && (description.Length != 0));
+
+}
+
+
+void removeTodos(){
+    System.Console.WriteLine("Select the index of the TODO you want to remove:");
+        seeTodos();
+        string theIndex;
+        bool isParsingSuccessful;
+        do{
+            theIndex = Console.ReadLine();
+            isParsingSuccessful = int.TryParse(theIndex, out int number);
+            if((isParsingSuccessful) && (number <= TODOs.Count)){
+                int index = number-1;
+                TODOs.RemoveAt(index);
+                System.Console.WriteLine("TODO removed: "+TODOs[index]);
+                break;
+            }  else {
+                System.Console.WriteLine("THE NUMBER "+number);
+                System.Console.WriteLine("nope bro");
+            }
+
+        } while(!isParsingSuccessful);
+}
+
+
+
+
+
+
+
+
+
+
 
 
