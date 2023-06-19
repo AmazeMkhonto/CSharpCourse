@@ -209,18 +209,44 @@ names.AddRange(new string[] {"amy", "Jimmy"}); // pass in an array
 // Ask the user to enter a number until they give a valid input
 
 
-bool isParsingSuccessful;
+// bool isParsingSuccessful;
 
-do{
+// do{
 
-    System.Console.WriteLine("Please enter a number");
-    string userInput = Console.ReadLine();
+//     System.Console.WriteLine("Please enter a number");
+//     string userInput = Console.ReadLine();
     
-    isParsingSuccessful = int.TryParse(userInput, out int number);
+//     isParsingSuccessful = int.TryParse(userInput, out int number);
 
-    if(isParsingSuccessful){
-        System.Console.WriteLine("Congratufuckinglations i guess "+number);
-    } else {
-        System.Console.WriteLine("bro enter a valid number before i kick you in the teeth "+number);
-    }
-}while(!isParsingSuccessful);
+//     if(isParsingSuccessful){
+//         System.Console.WriteLine("Congratufuckinglations i guess "+number);
+//     } else {
+//         System.Console.WriteLine("bro enter a valid number before i kick you in the teeth "+number);
+//     }
+// }while(!isParsingSuccessful);
+
+
+// count how many sheeps are missing
+bool[] sheeps = {true,  true,  true,  false,
+  true,  true,  true,  true ,
+  true,  false, true,  false,
+  true,  false, false, true ,
+  true,  true,  true,  true ,
+  false, false, true,  true};
+
+int number = CountSheep(sheeps);
+System.Console.WriteLine(number);
+
+static int CountSheep(bool[] sheeps){
+    return sheeps.Count(s => s);
+}
+
+
+string[] foodToEat = {"beef", "wors"};
+
+Random random = new Random();
+int randomIndex = random.Next(0, foodToEat.Length); // Generate a random index within the range of the array length
+
+string randomWord = foodToEat[randomIndex]; // Retrieve the word at the random index
+
+Console.WriteLine("Random word: " + randomWord);

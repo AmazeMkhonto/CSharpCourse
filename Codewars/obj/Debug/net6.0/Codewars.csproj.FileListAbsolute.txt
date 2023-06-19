@@ -1,0 +1,15 @@
+/home/amaze/Music/CSharpCourse/Codewars/bin/Debug/net6.0/Codewars
+/home/amaze/Music/CSharpCourse/Codewars/bin/Debug/net6.0/Codewars.deps.json
+/home/amaze/Music/CSharpCourse/Codewars/bin/Debug/net6.0/Codewars.runtimeconfig.json
+/home/amaze/Music/CSharpCourse/Codewars/bin/Debug/net6.0/Codewars.dll
+/home/amaze/Music/CSharpCourse/Codewars/bin/Debug/net6.0/ref/Codewars.dll
+/home/amaze/Music/CSharpCourse/Codewars/bin/Debug/net6.0/Codewars.pdb
+/home/amaze/Music/CSharpCourse/Codewars/obj/Debug/net6.0/Codewars.csproj.AssemblyReference.cache
+/home/amaze/Music/CSharpCourse/Codewars/obj/Debug/net6.0/Codewars.GeneratedMSBuildEditorConfig.editorconfig
+/home/amaze/Music/CSharpCourse/Codewars/obj/Debug/net6.0/Codewars.AssemblyInfoInputs.cache
+/home/amaze/Music/CSharpCourse/Codewars/obj/Debug/net6.0/Codewars.AssemblyInfo.cs
+/home/amaze/Music/CSharpCourse/Codewars/obj/Debug/net6.0/Codewars.csproj.CoreCompileInputs.cache
+/home/amaze/Music/CSharpCourse/Codewars/obj/Debug/net6.0/Codewars.dll
+/home/amaze/Music/CSharpCourse/Codewars/obj/Debug/net6.0/ref/Codewars.dll
+/home/amaze/Music/CSharpCourse/Codewars/obj/Debug/net6.0/Codewars.pdb
+/home/amaze/Music/CSharpCourse/Codewars/obj/Debug/net6.0/Codewars.genruntimeconfig.cache
