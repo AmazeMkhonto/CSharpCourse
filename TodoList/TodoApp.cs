@@ -48,7 +48,7 @@ void seeTodos(){
         }
 }
 
-
+string description;
 void addTodos(){
     do{
         System.Console.WriteLine("Enter the TODO description:");
@@ -61,9 +61,8 @@ void addTodos(){
         } else {
             TODOs.Add(description);
             System.Console.WriteLine("TODO successfully added: "+description);
+            break;
         }
-        System.Console.WriteLine($"is the description already there:  {(!TODOs.Contains(description))}");
-        System.Console.WriteLine();
     } while(!(TODOs.Contains(description)) && (description.Length != 0));
 
 }
@@ -79,15 +78,16 @@ void removeTodos(){
             isParsingSuccessful = int.TryParse(theIndex, out int number);
             if((isParsingSuccessful) && (number <= TODOs.Count)){
                 int index = number-1;
-                TODOs.RemoveAt(index);
                 System.Console.WriteLine("TODO removed: "+TODOs[index]);
+                TODOs.RemoveAt(index);
                 break;
             }  else {
                 System.Console.WriteLine("THE NUMBER "+number);
                 System.Console.WriteLine("nope bro");
+                
             }
 
-        } while(!isParsingSuccessful);
+        } while(!isParsingSuccessful );
 }
 
 
