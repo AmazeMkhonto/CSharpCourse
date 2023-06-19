@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/home/amaze/Music/CSharpCourse/Codewars/Codewars.csproj": {}
+    "C:\\Users\\bbdnet2872\\Music\\CSharpCourse\\Codewars\\Codewars.csproj": {}
   },
   "projects": {
-    "/home/amaze/Music/CSharpCourse/Codewars/Codewars.csproj": {
+    "C:\\Users\\bbdnet2872\\Music\\CSharpCourse\\Codewars\\Codewars.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/amaze/Music/CSharpCourse/Codewars/Codewars.csproj",
+        "projectUniqueName": "C:\\Users\\bbdnet2872\\Music\\CSharpCourse\\Codewars\\Codewars.csproj",
         "projectName": "Codewars",
-        "projectPath": "/home/amaze/Music/CSharpCourse/Codewars/Codewars.csproj",
-        "packagesPath": "/home/amaze/.nuget/packages/",
-        "outputPath": "/home/amaze/Music/CSharpCourse/Codewars/obj/",
+        "projectPath": "C:\\Users\\bbdnet2872\\Music\\CSharpCourse\\Codewars\\Codewars.csproj",
+        "packagesPath": "C:\\Users\\bbdnet2872\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bbdnet2872\\Music\\CSharpCourse\\Codewars\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/amaze/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\bbdnet2872\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,7 +49,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -52,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.113/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

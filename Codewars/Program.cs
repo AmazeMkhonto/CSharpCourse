@@ -98,25 +98,147 @@ if bmi <= 25.0 return "Normal"
 if bmi <= 30.0 return "Overweight"
 if bmi > 30 return "Obese"
 */
-static string Bmi(double weight, double height)
-  {
-    double heightSquared = Math.Pow(height,2);
-    double bmi = weight/heightSquared;
+// static string Bmi(double weight, double height)
+//   {
+//     double heightSquared = Math.Pow(height,2);
+//     double bmi = weight/heightSquared;
 
-    switch(bmi){
-      case <= 18.5:
-        return "Underweight";
-      case <= 25.0:
-        return "Normal";
-      case <= 30.0:
-        return "Overweight";
-      case > 30:
-        return "Obese";
-    }
-    return "";
+//     switch(bmi){
+//       case <= 18.5:
+//         return "Underweight";
+//       case <= 25.0:
+//         return "Normal";
+//       case <= 30.0:
+//         return "Overweight";
+//       case > 30:
+//         return "Obese";
+//     }
+//     return "";
+//   }
+
+
+// string a = Bmi(63,1.66);
+// System.Console.WriteLine(a);
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Given a set of numbers, return the additive inverse of each. 
+Each positive becomes negatives, and the negatives become positives.
+
+invert([1,2,3,4,5]) == [-1,-2,-3,-4,-5]
+invert([1,-2,3,-4,5]) == [-1,2,-3,4,-5]
+invert([]) == []
+*/
+
+//  static int[] InvertValues(int[] input)
+//   {
+//     for(int i = 0; i< input.Length ; i++){
+//       input[i] = - input[i] ;
+//     }
+//     return input;
+//   }
+
+// int[] a = {1,2,3,4,5};
+// int[] array = InvertValues(a);
+
+// foreach(int i in array){
+//   System.Console.WriteLine(i);
+// }
+
+
+
+
+
+
+
+
+
+
+
+/*
+A hero is on his way to the castle to complete his mission. 
+However, he's been told that the castle is surrounded with a 
+couple of powerful dragons! each dragon takes 2 bullets to be 
+defeated, our hero has no idea how many bullets he should carry..
+Assuming he's gonna grab a specific given number of bullets and
+move forward to fight another specific given number of dragons, will he survive?
+
+Return true if yes, false otherwise :)
+// */
+// static bool Hero(int bullets, int dragons)
+// {
+
+//   return bullets >= 2 * dragons ;
+  
+// }
+
+// System.Console.WriteLine(Hero(2,2)); //Hero(2,2) returns false ans Hero(2,1) should return true
+
+
+// if its a square return an area if rectange return perimeter
+// static int AreaOrPerimeter(int l, int w) {
+//         return l == w ? l * w : (l + w) * 2;
+//     }
+
+
+    // static string EvenOrOdd(int number)
+    // {
+    //   return number % 2 == 0 ? "Even" : "Odd";
+    // }
+
+    // because the function above only has 1 line of code it can be written this way i am no sure if tat is the  best practice
+    //  static string EvenOrOdd(int number) => number % 2 == 0 ? "Even" : "Odd";
+    
+    // now my question becomes does short code mean better code?
+
+
+
+
+
+
+
+
+    /*
+    A square of squares
+You like building blocks. You especially like building blocks that are squares. 
+And what you even like more, is to arrange them into a square of square building blocks!
+However, sometimes, you can't arrange them into a square. Instead, you end up with an ordinary
+ rectangle! Those blasted things! If you just had a way to know, whether you're currently working in vain… Wait! 
+ That's it! You just have to check if your number of building blocks is a perfect square.
+
+Task
+Given an integral number, determine if it's a square number:
+
+In mathematics, a square number or perfect square is an integer that is the square of an integer; 
+in other words, it is the product of some integer with itself.
+
+The tests will always use some integral number, so don't worry about that in dynamic typed languages.
+
+Examples
+-1  =>  false
+ 0  =>  true
+ 3  =>  false
+ 4  =>  true
+25  =>  true
+26  =>  false
+    */
+
+
+ static bool IsSquare(int n)
+  {
+     int squareRoot = (int)Math.Sqrt(n);
+  return squareRoot * squareRoot == n;
+
   }
 
-
-string a = Bmi(63,1.66);
-System.Console.WriteLine(a);
-
+  System.Console.WriteLine(IsSquare(4));
