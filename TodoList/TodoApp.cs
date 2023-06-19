@@ -50,11 +50,9 @@ void seeTodos(){
 
 
 void addTodos(){
-    string description;
-
     do{
         System.Console.WriteLine("Enter the TODO description:");
-        description = Console.ReadLine(); 
+        string description = Console.ReadLine(); 
         if((TODOs.Contains(description)) ){
             System.Console.WriteLine("The description must be unique");
 
@@ -64,6 +62,8 @@ void addTodos(){
             TODOs.Add(description);
             System.Console.WriteLine("TODO successfully added: "+description);
         }
+        System.Console.WriteLine($"is the description already there:  {(!TODOs.Contains(description))}");
+        System.Console.WriteLine();
     } while(!(TODOs.Contains(description)) && (description.Length != 0));
 
 }
