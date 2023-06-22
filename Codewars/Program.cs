@@ -323,16 +323,149 @@ accum("cwAt") -> "C-Ww-Aaa-Tttt"
 The parameter of accum is a string which includes only letters from a..z and A..Z.
 */
 
-static String Accum(string s) 
-  {
-    string result = "";
-    for(int i=0; i < s.Length; i++){
-        result = result + s[i];
-    }
-    return "";
-  }
+// static String Accum(string s) 
+//   {
+//     string result = "";
+//     for(int i=0; i < s.Length; i++){
+//         result = result + s[i];
+//     }
+//     return "";
+//   }
 
-string answer = Accum("abcd");
-System.Console.WriteLine(answer);
+// string answer = Accum("abcd");
+// System.Console.WriteLine(answer);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Your task is to make a function that can take any non-negative integer 
+as an argument and return it with its digits in descending order. Essentially, 
+rearrange the digits to create the highest possible number.
+Examples:
+Input: 42145 Output: 54421
+Input: 145263 Output: 654321
+Input: 123456789 Output: 987654321
+*/
+
+// static int DescendingOrder(int num)
+//   {
+//     string numberString = num.ToString();
+
+//     char[] charArray = numberString.ToCharArray();
+
+//     Array.Sort(charArray);
+//     Array.Reverse(charArray);
+
+//     string sortedNumberString = new string(charArray);
+
+//     int sortedNumber = int.Parse(sortedNumberString);
+
+//     return sortedNumber;
+
+//     // return int.Parse(string.Concat(num.ToString().OrderByDescending(x => x)));
+
+//   }
+
+//   int answer = DescendingOrder(42145);
+//   System.Console.WriteLine(answer);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Given two integers a and b, which can be positive or negative, 
+find the sum of all the integers between and including them and 
+return it. If the two numbers are equal return a or b.
+
+Note: a and b are not ordered!
+Examples (a, b) --> output (explanation)
+
+(1, 0) --> 1 (1 + 0 = 1)
+(1, 2) --> 3 (1 + 2 = 3)
+(0, 1) --> 1 (0 + 1 = 1)
+(1, 1) --> 1 (1 since both are same)
+(-1, 0) --> -1 (-1 + 0 = -1)
+(-1, 2) --> 2 (-1 + 0 + 1 + 2 = 2)
+
+Your function should only return a number, not the explanation about how you get that number.
+*/
+
+
+// int GetSum(int a, int b)
+//   {
+//     int sum = a;
+//     for(int i = a; i <= b; i++){
+//       sum = sum + i;
+//     }
+//     return sum;
+//   }
+
+// int answer = GetSum(1,3);
+// System.Console.WriteLine(answer);
+
+// int a = 0;
+// int b = -1;
+// int sum = 0;
+// if(a < b){
+//   for(int i = a; i <= b; i++){
+//   System.Console.WriteLine(i);
+//   sum = sum + i;
+//   }
+// } else{
+//   for(int i = b; i <= a; i++){
+//   System.Console.WriteLine(i);
+//   sum = sum + i;
+//   }
+// }
+
+// System.Console.WriteLine(sum);
+
+// return (a + b) * (Math.Abs(a - b) + 1) / 2;

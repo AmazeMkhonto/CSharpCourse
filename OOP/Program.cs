@@ -1,24 +1,12 @@
-﻿
-var result = new Rectangle(2,2);
+﻿class MedicalAppointments{
+    private string _patientName;
+    private DateTime _date;
 
-System.Console.WriteLine(result);
-class Rectangle
-{
-    // these are called fields
-    int height;
-    int width;
-
-
-    // this here is a constructor
-    public Rectangle(int height_, int width_){
-        height = height_;
-        width = width_;
+    public Program(DateTime date, string patientName)
+    {
+        _date = date;
+        _patientName = patientName;
     }
 
-
-    public int calaculateArea(){
-        return height * width;
-    }
-
+   
 }
-
