@@ -234,11 +234,105 @@ Examples
     */
 
 
- static bool IsSquare(int n)
-  {
-     int squareRoot = (int)Math.Sqrt(n);
-  return squareRoot * squareRoot == n;
+//  static bool IsSquare(int n)
+//   {
+//      int squareRoot = (int)Math.Sqrt(n);
+//   return squareRoot * squareRoot == n;
 
+//   }
+
+//   System.Console.WriteLine(IsSquare(4));
+
+
+
+/*
+Complete the solution so that it returns true if the first 
+argument(string) passed in ends with the 2nd argument (also a string).
+
+Examples:
+
+solution('abc', 'bc') // returns true
+solution('abc', 'd') // returns false
+*/
+//  static bool Solution(string str, string ending)
+//   {
+//     return str.EndsWith(ending);
+//   }
+
+
+
+
+
+
+
+
+
+
+
+/*
+Take 2 strings s1 and s2 including only letters from a to z. 
+Return a new sorted string, the longest possible, 
+containing distinct letters - each taken only once - coming from s1 or s2.
+
+Examples:
+a = "xyaabbbccccdefww"
+b = "xxxxyyyyabklmopq"
+longest(a, b) -> "abcdefklmopqwxy"
+
+a = "abcdefghijklmnopqrstuvwxyz"
+longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
+
+*/
+
+// string a = "xyaabbbccccdefww";
+// string b = "xxxxyyyyabklmopq";
+// static string Longest (string s1, string s2) 
+//   {
+//     string result = s1 + s2;
+//     string res = new string(result.Distinct().ToArray());
+
+//     char[] characters = res.ToCharArray();
+//     Array.Sort(characters);
+//     string sortedString = new string(characters);
+
+//     return sortedString;
+//   }
+  
+// string res = Longest(a,b);
+// System.Console.WriteLine(res);
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+This time no story, no theory. The examples below show you how to write function accum:
+
+Examples:
+accum("abcd") -> "A-Bb-Ccc-Dddd"
+accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+accum("cwAt") -> "C-Ww-Aaa-Tttt"
+The parameter of accum is a string which includes only letters from a..z and A..Z.
+*/
+
+static String Accum(string s) 
+  {
+    string result = "";
+    for(int i=0; i < s.Length; i++){
+        result = result + s[i];
+    }
+    return "";
   }
 
-  System.Console.WriteLine(IsSquare(4));
+string answer = Accum("abcd");
+System.Console.WriteLine(answer);
+
+
