@@ -469,3 +469,92 @@ Your function should only return a number, not the explanation about how you get
 // System.Console.WriteLine(sum);
 
 // return (a + b) * (Math.Abs(a - b) + 1) / 2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain
+ anything but exactly 4 digits or exactly 6 digits.
+
+If the function is passed a valid PIN string, return true, else return false.
+Examples (Input --> Output)
+
+"1234"   -->  true
+"12345"  -->  false
+"a234"   -->  false
+*/
+// using System.Text.RegularExpressions;
+
+// static bool ValidatePin(string pin)
+//   {
+//     // this code checks if there is no new lines
+//     //  if (pin.Contains("\n") || pin.Contains("\r"))
+//     //     {
+//     //         return false;
+//     //     }
+//     bool cond1 = Regex.IsMatch(pin, @"^\d{6}$");
+//     bool cond2 = Regex.IsMatch(pin, @"^\d{4}$");
+//     if(cond1 || cond2){
+//       return true;
+//     }
+//     return false; 
+
+//     // return Regex.IsMatch(pin, @"^(\d{6}|\d{4})\z");
+    
+//   }
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Write a function to convert a name into initials. 
+This kata strictly takes two words with one space in between them.
+The output should be two capital letters with a dot separating them.
+It should look like this:
+Sam Harris => S.H
+patrick feeney => P.F
+*/
+static string AbbrevName(string name)
+  {
+    return "";
+  }
