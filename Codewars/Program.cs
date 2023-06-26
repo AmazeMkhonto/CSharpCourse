@@ -1,4 +1,6 @@
-﻿// using System;
+﻿using System;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 // public class RockPaperScissors {
 
@@ -554,7 +556,190 @@ It should look like this:
 Sam Harris => S.H
 patrick feeney => P.F
 */
-static string AbbrevName(string name)
+// static string AbbrevName(string name)
+//   {
+//     return "";
+//   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+An isogram is a word that has no repeating letters, 
+consecutive or non-consecutive. Implement a function 
+that determines whether a string that contains only 
+letters is an isogram. Assume the empty string is an 
+isogram. Ignore letter case.
+
+Example: (Input --> Output)
+
+"Dermatoglyphics" --> true "aba" --> false "moOse" --> false (ignore letter case)
+
+isIsogram "Dermatoglyphics" = true
+isIsogram "moose" = false
+isIsogram "aba" = false
+
+*/
+
+// string a = "Dermatoglyphics";
+// string  b = "moOse";
+// string c ="aba";
+// string d = "Dermatoglypphics";
+
+
+// static bool IsIsogram(string str) 
+//   {
+    
+//     string lowercaseStr = str.ToLower();
+//     string res = new string(lowercaseStr.Distinct().ToArray());
+//     char[] characters = res.ToCharArray();
+//     string result = new string (characters);
+//     if (string.Equals(str, result, StringComparison.CurrentCultureIgnoreCase))
+//     {
+//         return true;
+//     }
+//     else
+//     {
+//     return false;
+//     }
+//     // return str.ToLower().Distinct().Count()==str.Length;
+//   }
+// bool result = IsIsogram(b);
+// System.Console.WriteLine(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Given an array of ones and zeroes, convert the equivalent binary value to an integer.
+
+Eg: [0, 0, 0, 1] is treated as 0001 which is the binary representation of 1.
+
+Examples:
+
+Testing: [0, 0, 0, 1] ==> 1
+Testing: [0, 0, 1, 0] ==> 2
+Testing: [0, 1, 0, 1] ==> 5
+Testing: [1, 0, 0, 1] ==> 9
+Testing: [0, 0, 1, 0] ==> 2
+Testing: [0, 1, 1, 0] ==> 6
+Testing: [1, 1, 1, 1] ==> 15
+Testing: [1, 0, 1, 1] ==> 11
+
+However, the arrays can have varying lengths, not just limited to 4.
+
+
+ static int binaryArrayToNumber(int[] BinaryArray)
   {
-    return "";
+    //Code here
   }
+
+  namespace Solution {
+  using NUnit.Framework;
+  using System;
+  [TestFixture]
+  public class SolutionTest
+  {
+    int[] Test1 = new int[] {0,0,0,0};
+    int[] Test2 = new int[] {1,1,1,1};
+    int[] Test3 = new int[] {0,1,1,0};
+    int[] Test4 = new int[] {0,1,0,1};
+    [Test]
+    public void BasicTesting()
+    {
+      Assert.AreEqual(0 , Kata.binaryArrayToNumber(Test1));
+      Assert.AreEqual(15 , Kata.binaryArrayToNumber(Test2));
+      Assert.AreEqual(6 , Kata.binaryArrayToNumber(Test3));
+      Assert.AreEqual(5 , Kata.binaryArrayToNumber(Test4));
+    }
+  }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Given a list of integers, determine whether the sum of its elements is odd or even.
+
+Give your answer as a string matching "odd" or "even".
+
+If the input array is empty consider it as: [0] (array with a zero).
+Examples:
+
+Input: [0]
+Output: "even"
+
+Input: [0, 1, 4]
+Output: "odd"
+
+Input: [0, -1, -5]
+Output: "even"
+
+*/
+
+
+static string OddOrEven(int[] array)
+  {
+    int sum = 0;
+    for(int i = 0; i < array.Length ; i++){
+      sum = sum + array[i];
+    }
+
+    if(sum % 2 == 0){
+      return "even";
+    } else {
+      return "odd";
+    }
+
+    //return array.Sum() % 2 == 0 ? "even" : "odd";
+  }
+
+int[] array = {0, -1, -5};
+
+string answer = OddOrEven(array);
+System.Console.WriteLine(answer);
