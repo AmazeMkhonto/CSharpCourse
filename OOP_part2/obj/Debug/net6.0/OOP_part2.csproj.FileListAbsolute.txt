@@ -1,0 +1,15 @@
+/home/amaze/Music/CSharpCourse/OOP_part2/bin/Debug/net6.0/OOP_part2
+/home/amaze/Music/CSharpCourse/OOP_part2/bin/Debug/net6.0/OOP_part2.deps.json
+/home/amaze/Music/CSharpCourse/OOP_part2/bin/Debug/net6.0/OOP_part2.runtimeconfig.json
+/home/amaze/Music/CSharpCourse/OOP_part2/bin/Debug/net6.0/OOP_part2.dll
+/home/amaze/Music/CSharpCourse/OOP_part2/bin/Debug/net6.0/ref/OOP_part2.dll
+/home/amaze/Music/CSharpCourse/OOP_part2/bin/Debug/net6.0/OOP_part2.pdb
+/home/amaze/Music/CSharpCourse/OOP_part2/obj/Debug/net6.0/OOP_part2.csproj.AssemblyReference.cache
+/home/amaze/Music/CSharpCourse/OOP_part2/obj/Debug/net6.0/OOP_part2.GeneratedMSBuildEditorConfig.editorconfig
+/home/amaze/Music/CSharpCourse/OOP_part2/obj/Debug/net6.0/OOP_part2.AssemblyInfoInputs.cache
+/home/amaze/Music/CSharpCourse/OOP_part2/obj/Debug/net6.0/OOP_part2.AssemblyInfo.cs
+/home/amaze/Music/CSharpCourse/OOP_part2/obj/Debug/net6.0/OOP_part2.csproj.CoreCompileInputs.cache
+/home/amaze/Music/CSharpCourse/OOP_part2/obj/Debug/net6.0/OOP_part2.dll
+/home/amaze/Music/CSharpCourse/OOP_part2/obj/Debug/net6.0/ref/OOP_part2.dll
+/home/amaze/Music/CSharpCourse/OOP_part2/obj/Debug/net6.0/OOP_part2.pdb
+/home/amaze/Music/CSharpCourse/OOP_part2/obj/Debug/net6.0/OOP_part2.genruntimeconfig.cache
